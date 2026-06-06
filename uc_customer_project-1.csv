@@ -1,0 +1,14 @@
+Title,Content,Status,Requirement,Spec,Test
+REQ-1,The system shall control the front windshield wiper speed based on rain intensity,open,x,,
+SPEC-1.1,The system shall support at least three wiper speed levels (low medium high),open,,x,
+TEST-1.1,Verify that the system switches to low speed when light rain is detected,open,,,x
+SPEC-1.2,The system shall automatically adjust speed based on sensor input,open,,x,
+TEST-1.2,Verify that the system switches to high speed during heavy rain,open,,,x
+
+REQ-2,The system shall allow manual override of the wiper speed by the driver,open,x,,
+SPEC-2.1,The driver shall be able to select wiper speed via a control lever,open,,x,
+TEST-2.1,Verify that manual input overrides automatic mode,open,,,x
+
+REQ-3,The system shall ensure safe operation in case of sensor failure,open,x,,
+SPEC-3.1,The system shall default to intermittent mode if the rain sensor fails,open,,x,
+TEST-3.1,Verify that intermittent mode is activated when sensor data is unavailable,open,,,x
