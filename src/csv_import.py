@@ -25,13 +25,13 @@ def main():
             "Test": pl.String(),
         }
     )
-    csv_data = pl.read_csv(csv_path, quote_char=None, row_index_name=0)
+    csv_data = pl.read_csv(csv_path, quote_char=None)
 
-    for row in csv_data.iter_rows():
+    for row in csv_data.iter_rows(named=True):
         if not row["Title"]:
             # skip empty lines
             continue
-        logging.debug(row)
+        logging.info(row)
 
 
 if __name__ == "__main__":
