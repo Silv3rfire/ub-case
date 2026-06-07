@@ -25,13 +25,12 @@ needs_links = {
     "tests": {
         "incoming": "is tested by",
         "outgoing": "tests",
-        "copy": False,
-        "color": "#00AA00",
     },
 }
 
-csv_data_source = Path.cwd() / ".." / "uc_customer_project-1.csv"
 needs_build_json = True
+
+csv_data_source = Path.cwd() / ".." / "uc_customer_project-1.csv"
 
 
 def setup(app: Sphinx):
